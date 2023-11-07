@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icons" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+    <title> LogIn Form </title>
+</head>
+<body>
+    <img src="assets/IMG-1.png" alt="Porsche logo image" id="PorsheLogo-1">
+    <header id="Header">
+        <!-- <img src="assets/IMG-1.png" alt="Porsche logo image" id="PorsheLogo-1"> -->
+        <nav id="Navigation" >
+            <a href="#" rel="noreferrer" class="NavigationLink">HOME</a>
+            <a href="#" rel="noreferrer" class="NavigationLink">MODELS</a>
+            <a href="#" rel="noreferrer" class="NavigationLink">SOCIAL</a>
+            <a href="#" rel="noreferrer" class="NavigationLink">LOGIN</a>
+        </nav>
+        <!-- <img src="assets/SvgIcons.png" alt="This is Navigation bar" class="" onclick="NoNev()" id="NavigationBars"> -->
+    </header>
+    <img src="assets/SvgIcons.png" alt="This is Navigation bar" class="" onclick="NoNev()" id="NavigationBars">
+
+    <section id="Section">
+        <form action="Login" id="LoginForm">
+            <h1 class="Heading-1">PORSCHE</h1>
+            <h2 class="Headinf-2">Welcom!</h2>
+            <h3 class="Heading-3"><a href="#" class="HeadingLink">already have an account?</a></h3>
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" size="10" placeholder="First Name" required autofocus>
+            <label for="MiddelName">Middel Name</label>
+            <input type="text" name="MiddelName" id="MiddelName" size="10" placeholder="Middel Name" autofocus>
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="LastName" size="10" placeholder="Last Name" required autofocus>
+            <label for="UserName" >User Name</label>
+            <input type="text" id="UserName" size="10" placeholder="User Name" required autofocus>
+            <label for="PhoneNumber">Phone Number</label>
+            <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="0123456789" required autofocus pattern="[+91]{7,8,9}" size="10">
+            <label for="Emai">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="@gmail.com" required autofocus size="20">
+            <div class="GenderDiv">
+                <label for="Gender">Gender</label>
+                <input type="radio" id="MaleGender" name="Gender">
+                <label for="MaleGender">Male</label>
+                <input type="radio" id="FemaleGender" name="Gender">
+                <label for="FemaleGender">Female</label>
+            </div>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" placeholder="Password" required autofocus 
+            title="Enter minimum 8 char password" minlength="8" maxlength="10">
+        
+            <button id="Submit" class="Submit">SUBMIT</button>
+        </form>
+    </section>
+
+    <footer id="Footer"></footer>
+    
+
+    <!-- JavaScript Here  -->
+    <script src="Index.js"></script>
+</body>
+</html>

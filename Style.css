@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+*{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+}
+
+#Header{
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+#PorsheLogo-1{
+    z-index: 1;
+    position: absolute;
+    width: 20%;
+    /* width: 50px; */
+    top: 30px;
+    left: 40px;
+    background-color: transparent;
+    transition: ease-in-out 0.5s;
+}
+#PorsheLogo-1:hover{
+    width: 22%;
+}
+#Navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+    width: 100%;
+}
+.NavigationLink{
+    margin :10px 10px 10px 0px  ;
+    transition: ease-in-out 0.5s;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.NavigationLink:hover{
+    background-color: red;
+    box-shadow: 10px 10px white;
+}
+.NavigationLink:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0s;
+    box-shadow: 10px 10px rgb(255, 0, 0);
+}
+#NavigationBars{
+    display: none;
+    width: 50px;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    translate: -50%;
+    top: 30px;
+    background-color: transparent;
+}
+.AnimationNavigation{
+    animation: NavBar linear forwards 1s;
+}
+@keyframes NavBar{
+    from{
+        rotate: z -0deg;
+    }
+    to{
+        rotate: z -90deg;
+    }
+  }
+
+#Section{
+    z-index: 3;
+    display: block;
+    padding: 50px;
+    margin: 200px;
+    margin-top: 50px;
+    border: 2px solid white;
+    transition: ease-in-out 0.5s;
+    border-radius: 10px;
+}
+#Section:hover{
+    background-color: red;
+    box-shadow: 20px 20px white;
+}
+#LoginForm{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: transparent; */
+}
+.Heading-1{
+    font-size: 80px;
+}
+h1,h2,h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:100;
+    text-align: center;
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+}
+input{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.743);
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 15px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+}
+button{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    translate: -50%;
+    margin: 20px;
+    width: min-content;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.743);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    transition: ease-in-out 0.5s;
+}
+button:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    box-shadow: 10px 10px white;
+}
+button:active{
+    transition: 0s;
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px red;
+}
+
+@media (max-width:899px) {
+    /* #Header{
+        width: min-content;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        /* align-items: center; 
+        position: sticky;
+    }
+    #NavigationBars{
+        display: block;
+    }
+    #Navigation{
+        width: min-content;
+        font-size: 15px;
+    }
+    .NavigationLink{
+        position: relative;
+        top: 0px;
+        background-color: black;
+        margin :0px 5px  ;
+        padding: 5px 10px;
+    }
+    #PorsheLogo-1{
+        z-index: 11111111111;
+        position: absolute;
+        width: 20%;
+        top: 80px;
+        left: 20px;
+        background-color: transparent;
+        transition: ease-in-out 0.5s;
+    }
+    #Section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:  10px;
+        margin: 15px;
+        margin-top: 80px;
+        width: min-content;
+    }
+    .Heading-1{
+        font-size: 20px;
+    }
+    #LoginForm{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input{
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.743);
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        font-size: 15px;
+        margin: 10px 0px;
+        border: none;
+        border-radius: 10px;
+    } */
+    *{
+        width: min-content;
+    }
+    
+    #Header{
+        width: min-content;
+        z-index: 0;
+    }
+    #PorsheLogo-1{
+        top: 80px;
+        left: 80%;
+    }
+    #Navigation{
+        position: absolute;
+        background-color: black;
+        align-items: center;
+        flex-direction: column;
+        font-size: 15px;
+        width:150px;
+    }
+    .NavigationLink{
+        margin :30px;
+    }
+    #NavigationBars{
+        display: block;
+        width: 40px;
+    }
+    
+    #Section{
+        width: min-content;
+        z-index: 3;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 130px;
+    }
+    #LoginForm{
+        padding: 10px;
+    }
+    .Heading-1{
+        font-size: 80px;
+    }
+    h1,h2,h3{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight:100;
+        width: max-content;
+        padding: 5px;
+    }
+    h3{
+        margin-bottom: 20px;
+    }
+    label{
+        width: max-content;
+    }
+    input{
+        width: 200px;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.743);
+        color: rgb(0, 0, 0);
+        padding: 10px 50px;
+        font-size: 15px;
+        margin: 10px 0px;
+        border: none;
+        border-radius: 10px;
+    }
+    button{
+        position: relative;
+        left: 50%;
+        right: 50%;
+        translate: -50%;
+        margin: 20px;
+        width: min-content;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.743);
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: black;
+        font-weight: 800;
+        transition: ease-in-out 0.5s;
+    }
+    button:hover{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        box-shadow: 10px 10px white;
+    }
+    button:active{
+        transition: 0s;
+        background-color: white;
+        color: black;
+        box-shadow: 10px 10px red;
+    }
+}
